@@ -143,7 +143,7 @@ game_info.round_num     # the round number from 1 to NUM_ROUNDS
 state.is_terminal       # true when the round has ended, false otherwise : true only in the input state to on_round_end(...)
 state.street            # ongoing street : pre-flop, flop, auction, turn, or river respectively
 state.my_hand           # your cards
-state.community_cards   # board cards
+state.board             # board cards
 state.opp_revealed_cards    # opponent's  revealed cards or [] if nothing is revealed yet
 state.my_chips          # the number of chips you have remaining
 state.opp_chips         # the number of chips your opponent has remaining
