@@ -1,0 +1,3 @@
+eval7==0.1.10
+future==1.0.0
+pyparsing==3.3.2

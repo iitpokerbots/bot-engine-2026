@@ -1,0 +1,14 @@
+# Python artifacts
+__pycache__/
+
+# Virtual environments
+venv/
+.venv/
+
+# OS metadata
+.DS_Store
+
+# Logs
+logs/
+*.glog
+*.plog
