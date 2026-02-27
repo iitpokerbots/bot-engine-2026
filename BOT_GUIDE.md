@@ -6,9 +6,9 @@ You can use this template to build your own bot for the competition.
 The only file you **must** modify is `bot.py`. The only functions needed to be written by you are
 
 ``` python
-on_hand_start(self, game_info, state, active)
-on_hand_end(self, game_info, result, active)
-get_move(self, game_info, state, active)
+on_hand_start(self, game_info, current_state, active)
+on_hand_end(self, game_info, current_state, active)
+get_move(self, game_info, current_state, active)
 ```
 
 ------------------------------------------------------------------------
@@ -21,7 +21,7 @@ Run the following command to make two of your bots play a match.
 python engine.py
 ```
 
-The two bots are instantiated from the files specified in `config.py`. The names for the bots are also specified in `config.py`.
+They are instantiated from the files specified in `config.py`. Their names are also taken from the same file.
 
 For example,
 ```python
@@ -31,7 +31,7 @@ BOT_1_FILE = './example_bot.py'
 BOT_2_NAME = 'BotB'
 BOT_2_FILE= './example_bot.py'
 ```
-With the above config, both the bots are instantiated using the algorithms specified in `./example_bot.py` and named `BotA` and `BotB`.
+With the above config, the bots are both instantiated using the algorithms specified in `./example_bot.py` and named `BotA` and `BotB`.
 
 ------------------------------------------------------------------------
 
